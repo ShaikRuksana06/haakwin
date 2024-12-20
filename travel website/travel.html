@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+    <header>
+        <h1>Train Ticket Booking</h1>
+    </header>
+    <nav>
+        <a href="#book">Book Ticket</a>
+        <a href="#schedule">Train Schedule</a>
+        <a href="#reservations">My Reservations</a>
+    </nav>
+
+    <div class="container" id="book">
+        <h2>Book Your Ticket</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="source">Source Station:</label>
+            <input type="text" id="source" name="source" required>
+
+            <label for="destination">Destination Station:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="sleeper">Sleeper</option>
+                <option value="ac">AC</option>
+                <option value="general">General</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <div class="container" id="schedule">
+        <h2>Train Schedule</h2>
+        <div class="schedule">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>pinakini</td>
+                        <td>chennai</td>
+                        <td>vijayawada</td>
+                        <td>9.00 AM</td>
+                        <td>2:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>simhapuri</td>
+                        <td>hyderbad</td>
+                        <td>gudur</td>
+                        <td>8.15 AM</td>
+                        <td>10.30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>krishna</td>
+                        <td>vijayawada</td>
+                        <td>tirupati</td>
+                        <td>5.30 PM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container" id="reservations">
+        <h2>My Reservations</h2>
+        <ul id="reservationList">
+        </ul>
+    </div>
+
+    <script src="travel.js"></script>
+</body>
+</html>
+
+
